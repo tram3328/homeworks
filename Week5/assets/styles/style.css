@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(165.62deg, rgba(255, 255, 255, 0.5) 0.85%, rgba(251, 241, 209, 0.5) 104.48%);
+}
+
+.menu:hover {
+    color: coral;
+    text-decoration: underline;
+}
+
+.a:active {
+    color: red
+}
+
+.a:visited {
+    color: blue;
+}
+
+.background-image {
+    display: flex;
+    float: right;
+}
+
+object {
+    width: 628px;
+    height: 556px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+
+    font-family: 'SF Pro Display', times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #242424;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'SF Pro Display', times, serif;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.icon {
+    align-self: flex-start;
+    margin-right: 450px;
+}
+
+h1 {
+    font-family: 'Sansation', times, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    width: 600px;
+}
+
+p {
+    font-family: 'SF Pro Display', Times, Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 42px;
+    color: #646464;
+    padding-bottom: 20px;
+}
+
+article {
+    border: 1px blue;
+    display: flex;
+    width: 519px;
+    height: 249px;
+    left: 20%;
+}
+
+.text {
+    float: left;
+    padding-left: 3vw;
+    margin-bottom: 20px;
+}
+
+#button1,
+#button2 {
+    padding: 12px;
+    font-family: 'SF Pro Display', times, serif;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+    background: linear-gradient(330.53deg, #D43300 -15.77%, #F77943 28.41%, #FC886F 98.47%);
+    box-shadow: 4px 8px 16px rgba(249, 221, 114, 0.3);
+    border-radius: 20px;
+}
+
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Thin'), local('San-Francisco-Pro-Display-Thin'),
+        url('SFProDisplay-Thin.woff2') format('woff2'),
+        url('SFProDisplay-Thin.woff') format('woff'),
+        url('SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: local('Sansation Regular'), url('sansationregular.woff2') format('woff2'), url('sansationregular.woff') format('woff'), url('sansationregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
