@@ -4,9 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Datify</title>
+    <style>
+        body {
+            background-color: #FEEFE3;
+        }
+        .container, header, nav, main, article, section {
+            display: grid;
+            border: 1px solid red;
+
+            font-family: 'Google Sans';
+        }
+        div, h1, p {
+            border: 1px solid blue;
+        }
+
+        .container {
+            grid-template-rows: 1fr 3fr 2fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        header {
+        grid-column: 1/3;
+        }
+
+nav {
+    grid-template-columns: repeat(8 1fr);
+    grid-template-rows: 1fr;
+}
+
+#datify {
+    align-self: start;
+}
+.menu {
+    
+    align-self: center;
+    justify-self: center;
+    width: 50px;
+    gap: 10px;
+}
+
+main {
+    
+    grid: 1/2;
+}
+article {
+    grid-template-columns: 1fr;
+    width: 550px;
+}
+
+section {
+    grid-column: 1/2;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    height: 178px;
+    
+}
+.statistics {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    align-self: center;
+    justify-self: center;
+    width: 125px;
+height: 127px;
+
+}
+
+input {
+width: 1fr;
+height: 34px;
+left: 72px;
+top: 600px;
+
+background: #FFFFFF;
+border-radius: 40px;
+}
+
+object {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 1fr;
+    height: 2fr;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+.text {
+    width: 185px;
+height: 24px;
+left: 71px;
+top: 207px;
+font-family: Google Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+color: #ED9B59;
+}
+
+h1 {
+    font-style: normal;
+font-weight: bold;
+font-size: 58px;
+line-height: 101.8%;
+letter-spacing: -0.01em;
+color: #1A1D32;
+}
+
+p {
+    width: 520px;
+height: 120px;
+left: 71px;
+top: 458px;
+
+font-family: Google Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+color: #1A1D32;
+opacity: 0.7;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('GoogleSans-Regular.eot');
+    src: local('Google Sans Regular'), local('GoogleSans-Regular'),
+        url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GoogleSans-Regular.woff2') format('woff2'),
+        url('GoogleSans-Regular.woff') format('woff'),
+        url('GoogleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+    <header>
+        <nav>
+            <img class="logo" src="assets/images/Icon_rabbit.png" alt="rabbit" width="24" height="24">
+        
+            <div id="datify">Datify</div>
+            <div><a class="menu" href="/home.html">Home</a></div>
+            <div><a class="menu" href="/members.html">Members</a></div>
+            <div><a class="menu" href="/blog.html">Blog</a></div>
+            <div><a class="menu" href="/privacy.html">Privacy</a></div>
+            <div><a class="menu" href="/login.html">Log in</a></div>
+            <div><a id="button1" class="Register" href="/register.html">Register</a></div>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <article>
+        <div class="text">Because you deserve better!</div>
+        <h1>Get noticed for who you are, not what you look like.</h1>
+        <p>You’re more than just a photo. You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Because you deserve what dating deserves: better.</p></article>
+        <input type="text" name="email"/>
+    </main>
+
+<section>
+    <div class="statistics">
+        <h2>15k+</h2>
+        <p>Dates and matches made everyday</p>
+    </div>
+    <div class="statistics">
+        <h3>1,456</h3>
+        <p>New members signup every day</p>
+    </div>
+    <div class="statistics">
+        <h4>1M+</h4>
+        <p>Members from around the world</p>
+    </div>
+</section>
+</div>
+<div class="backround-image">
+    <object type="image/png" data="assets/images/image 1(1).png"> </object> 
 </body>
 </html>
