@@ -39,7 +39,6 @@
         }
 
         nav {
-            grid-template-columns: repeat(8 1fr);
             grid-template-rows: 1fr;
         }
 
@@ -56,12 +55,11 @@
             color: black;
             padding: 10px;
             font-weight: 700;
-            line-height: 20, 35px;
             text-align: center;
         }
 
         main {
-            grid: 1/2;
+            grid-column: 1/2;
         }
 
         article {
@@ -88,7 +86,7 @@
         }
 
         input {
-            width: 1fr;
+
             height: 34px;
             left: 72px;
             top: 600px;
@@ -97,12 +95,6 @@
             border-radius: 40px;
         }
 
-        object {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            width: 1fr;
-            height: 2fr;
-        }
 
         h1,
         h2,
@@ -147,8 +139,7 @@
 
         ul {
             list-style-type: none;
-            margin: 20;
-            padding: 0;
+            margin: 20px;
             text-align: center;
             text-decoration: none;
         }
@@ -241,6 +232,7 @@
                 <p>Members from around the world</p>
             </div>
         </section>
+    </div>
 </body>
 
 </html>
