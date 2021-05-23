@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,22 @@
         body {
             background-color: #FEEFE3;
         }
-        .container, header, nav, main, article, section {
+
+        .container,
+        header,
+        nav,
+        main,
+        article,
+        section {
             display: grid;
             border: 1px solid red;
 
             font-family: 'Google Sans';
         }
-        div, h1, p {
+
+        div,
+        h1,
+        p {
             border: 1px solid blue;
         }
 
@@ -25,195 +35,212 @@
         }
 
         header {
-        grid-column: 1/3;
+            grid-column: 1/3;
         }
 
-nav {
-    grid-template-columns: repeat(8 1fr);
-    grid-template-rows: 1fr;
-}
+        nav {
+            grid-template-columns: repeat(8 1fr);
+            grid-template-rows: 1fr;
+        }
 
-#datify {
-    align-self: start;
-}
-.menu {
-    
-    align-self: center;
-    justify-self: center;
-    width: 50px;
-    gap: 10px;
-}
+        #datify {
+            align-self: start;
+        }
 
-main {
-    
-    grid: 1/2;
-}
-article {
-    grid-template-columns: 1fr;
-    width: 550px;
-}
+        .menu {
+            align-self: center;
+            justify-self: center;
+            width: 50px;
+            gap: 20px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-weight: 700;
+            line-height: 20, 35px;
+            text-align: center;
+        }
 
-section {
-    grid-column: 1/2;
-    grid-template-rows: 3fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
-    height: 178px;
-    
-    
-}
-.statistics {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    align-self: center;
-    justify-self: center;
-    width: 125px;
-height: 127px;
+        main {
+            grid: 1/2;
+        }
 
-}
+        article {
+            grid-template-columns: 1fr;
+            width: 550px;
+        }
 
-input {
-width: 1fr;
-height: 34px;
-left: 72px;
-top: 600px;
+        section {
+            grid-column: 1/2;
+            grid-template-rows: 3fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            height: 178px;
+        }
 
-background: #FFFFFF;
-border-radius: 40px;
-}
+        .statistics {
+            display: grid;
+            grid-template-rows: 2fr 1fr;
+            align-self: center;
+            justify-self: center;
+            width: 125px;
+            height: 127px;
+        }
 
-object {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 1fr;
-    height: 2fr;
-}
+        input {
+            width: 1fr;
+            height: 34px;
+            left: 72px;
+            top: 600px;
 
-h1, h2, h3, h4 {
-    font-weight: 700;
-    text-align: center;
-}
+            background: #FFFFFF;
+            border-radius: 40px;
+        }
 
-.text {
-    width: 185px;
-height: 24px;
-left: 71px;
-top: 207px;
-font-family: Google Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 24px;
-color: #ED9B59;
-}
+        object {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            width: 1fr;
+            height: 2fr;
+        }
 
-h1 {
-    font-style: normal;
-font-weight: bold;
-font-size: 58px;
-line-height: 101.8%;
-letter-spacing: -0.01em;
-color: #1A1D32;
-}
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 700;
+            text-align: center;
+        }
 
-p {
-    width: 520px;
-height: 120px;
-left: 71px;
-top: 458px;
+        .text {
+            width: 185px;
+            height: 24px;
+            left: 71px;
+            top: 207px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 24px;
+            color: #ED9B59;
+        }
 
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-color: #1A1D32;
-opacity: 0.7;
-}
+        h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 101.8%;
+            letter-spacing: -0.01em;
+            color: #1A1D32;
+        }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-}
+        p {
+            width: 520px;
+            height: 120px;
 
-li {
-  display: inline;
-}
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: #1A1D32;
+            opacity: 0.7;
+        }
 
-body{
-    background-image: url('assets/images/image 1(1).png');
-    background-repeat: no-repeat;
-    background-position: 75% 25%;
-    background-size: 500px;
-}
+        ul {
+            list-style-type: none;
+            margin: 20;
+            padding: 0;
+            text-align: center;
+            text-decoration: none;
+        }
 
-#button1 {
-width: 146px;
-height: 52px;
+        li {
+            display: inline;
+        }
 
-background: #ED9B59;
-box-shadow: 0px 100px 161px rgba(245, 155, 90, 0.08), 0px 64.8148px 94.2894px rgba(245, 155, 90, 0.0607407), 0px 38.5185px 51.2815px rgba(245, 155, 90, 0.0485926), 0px 20px 26.1625px rgba(245, 155, 90, 0.04), 0px 8.14815px 13.1185px rgba(245, 155, 90, 0.0314074), 0px 1.85185px 6.33565px rgba(245, 155, 90, 0.0192593);
-border-radius: 40px;
-}
+        body {
+            background-image: url('assets/images/image 1(1).png');
+            background-repeat: no-repeat;
+            background-position: 75% 25%;
+            background-size: 500px;
+        }
 
-@font-face {
-    font-family: 'Google Sans';
-    src: url('GoogleSans-Regular.eot');
-    src: local('Google Sans Regular'), local('GoogleSans-Regular'),
-        url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
-        url('GoogleSans-Regular.woff2') format('woff2'),
-        url('GoogleSans-Regular.woff') format('woff'),
-        url('GoogleSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+        #button1 {
+            width: 146px;
+            height: 152px;
+
+            background: #ED9B59;
+            box-shadow: 0px 100px 161px rgba(245, 155, 90, 0.08), 0px 64.8148px 94.2894px rgba(245, 155, 90, 0.0607407), 0px 38.5185px 51.2815px rgba(245, 155, 90, 0.0485926), 0px 20px 26.1625px rgba(245, 155, 90, 0.04), 0px 8.14815px 13.1185px rgba(245, 155, 90, 0.0314074), 0px 1.85185px 6.33565px rgba(245, 155, 90, 0.0192593);
+            border-radius: 40px;
+            color: white;
+        }
+
+        .home {
+            color: #ED9B59;
+        }
+
+        .statistics span {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+
+        @font-face {
+            font-family: 'Google Sans';
+            src: url('GoogleSans-Regular.eot');
+            src: local('Google Sans Regular'), local('GoogleSans-Regular'),
+                url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+                url('GoogleSans-Regular.woff2') format('woff2'),
+                url('GoogleSans-Regular.woff') format('woff'),
+                url('GoogleSans-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-    <header>
-        <nav>
-            <img class="logo" src="assets/images/Icon_rabbit.png" alt="rabbit" width="24" height="24">
-        
-            <ul>
-                <li><div id="datify"Datify></div></li>
-                <li><a class="menu" href="/home.html">Home</a></li>
-                <li><a class="menu" href="/members.html">Members</a></li>
-                <li><a class="menu" href="/blog.html">Blog</a></li>
-                <li><a class="menu" href="/privacy.html">Privacy</a></li>
-                <li><a class="menu" href="/login.html">Log in</a></li>
-                <li><a id="button1" class="Register" href="/register.html">Register</a></li>
-        </ul>
-    </nav>
-    </header>
+        <header>
+            <nav>
+                <img class="logo" src="assets/images/Icon_rabbit.png" alt="rabbit" width="24" height="24">
 
-    <main>
-    <article>
-        <div class="text">Because you deserve better!</div>
-        <h1>Get noticed for who you are, not what you look like.</h1>
-        <p>You’re more than just a photo. You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Because you deserve what dating deserves: better.</p></article>
-        <input type="text" name="email"/>
-    </main>
+                <ul>
+                    <li><span id="datify" Datify></span></li>
+                    <li><a class="menu home" href="/home.html">Home</a></li>
+                    <li><a class="menu" href="/members.html">Members</a></li>
+                    <li><a class="menu" href="/blog.html">Blog</a></li>
+                    <li><a class="menu" href="/privacy.html">Privacy</a></li>
+                    <li><a class="menu login" href="/login.html">Log in</a></li>
+                    <li><a id="button1" class="Register" href="/register.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<section>
-    <div class="statistics">
-        <h2>15k+</h2>
-        <p>Dates and matches made everyday</p>
-    </div>
-    <div class="statistics">
-        <h3>1,456</h3>
-        <p>New members signup every day</p>
-    </div>
-    <div class="statistics">
-        <h4>1M+</h4>
-        <p>Members from around the world</p>
-    </div>
-</section>
-</div>
-<div class="backround-image">
-    <object type="image/png" data="assets/images/image 1(1).png"> </object> 
+        <main>
+            <article>
+                <div class="text">Because you deserve better!</div>
+                <h1>Get noticed for who you are, not what you look like.</h1>
+                <p>You’re more than just a photo. You have stories to tell, and passions to share, and things to talk
+                    about that are more interesting than the weather. Because you deserve what dating deserves: better.
+                </p>
+            </article>
+            <input type="text" name="email" />
+        </main>
+
+        <section>
+            <div class="statistics">
+                <span>15k+</span>
+                <p>Dates and matches made everyday</p>
+            </div>
+            <div class="statistics">
+                <span>1,456</span>
+                <p>New members signup every day</p>
+            </div>
+            <div class="statistics">
+                <span>1M+</span>
+                <p>Members from around the world</p>
+            </div>
+        </section>
 </body>
+
 </html>
