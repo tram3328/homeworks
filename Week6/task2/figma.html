@@ -9,37 +9,49 @@
     <style>
         body {
             background-color: #FEEFE3;
+            max-height: 100%;
+            max-width: 100%;
         }
 
         .container,
         header,
         nav,
         main,
-        article,
+        .main_part,
         section {
             display: grid;
             border: 1px solid red;
-
-            font-family: 'Google Sans';
+            font-family: 'Google Sans', Arial, Helvetica, sans-serif;
         }
 
-        div,
-        h1,
-        p {
+        div {
             border: 1px solid blue;
         }
 
         .container {
-            grid-template-rows: 1fr 3fr 2fr;
-            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 4fr 2fr;
+            grid-template-columns: 1fr 1.5fr;
+        }
+
+        span {
+            color: rgba(237, 155, 89, 1);
         }
 
         header {
             grid-column: 1/3;
+            height: 30%;
         }
 
-        nav {
-            grid-template-rows: 1fr;
+        .logo {
+            margin-right: 1vw;
+        }
+
+        .datify {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1A1D32;
         }
 
         #datify {
@@ -52,61 +64,76 @@
             width: 50px;
             gap: 20px;
             text-decoration: none;
-            color: black;
+            color: #7D8790;
             padding: 10px;
             font-weight: 700;
             text-align: center;
         }
 
-        main {
-            grid-column: 1/2;
+        .main_part {
+            height: 70%;
         }
 
-        article {
-            grid-template-columns: 1fr;
-            width: 550px;
+        main {
+            grid-column: 1/2;
+            margin-left: 11%;
+        }
+
+        .image {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        .couple {
+            max-height: 80%;
         }
 
         section {
+            margin-left: 11%;
             grid-column: 1/2;
             grid-template-rows: 3fr;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
-            padding: 10px;
             height: 178px;
         }
 
         .statistics {
             display: grid;
-            grid-template-rows: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
             align-self: center;
             justify-self: center;
-            width: 125px;
-            height: 127px;
+            width: 115px;
+            height: 120px;
+        }
+
+        .statistics_big {
+            font-size: 42px;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+
+            line-height: 71px;
+            letter-spacing: -4px;
+        }
+
+        .statistics_text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #1A1D32;
         }
 
         input {
-
             height: 34px;
             left: 72px;
             top: 600px;
-
             background: #FFFFFF;
             border-radius: 40px;
         }
 
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-weight: 700;
-            text-align: center;
-        }
-
         .text {
-            width: 185px;
-            height: 24px;
+            height: 5vh;
             left: 71px;
             top: 207px;
             font-style: normal;
@@ -116,28 +143,31 @@
             color: #ED9B59;
         }
 
-        h1 {
+        .title {
             font-style: normal;
             font-weight: bold;
-            font-size: 58px;
-            line-height: 101.8%;
+            font-size: 43px;
             letter-spacing: -0.01em;
             color: #1A1D32;
         }
 
-        p {
-            width: 520px;
-            height: 120px;
+        .main_text {
+            display: grid;
+            grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
+            width: 90%;
+            height: 30vh;
 
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 30px;
             color: #1A1D32;
             opacity: 0.7;
         }
 
         ul {
+            display: grid;
+            grid-template-columns: 1fr 5fr 2fr;
             list-style-type: none;
             margin: 20px;
             text-align: center;
@@ -146,13 +176,6 @@
 
         li {
             display: inline;
-        }
-
-        body {
-            background-image: url('assets/images/image 1(1).png');
-            background-repeat: no-repeat;
-            background-position: 80% 20%;
-            background-size: 500px;
         }
 
         #button1 {
@@ -170,18 +193,18 @@
         }
 
         .statistics span {
-            font-size: 30px;
-            font-weight: 700;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 71px;
+            letter-spacing: -4px;
         }
-
 
         @font-face {
             font-family: 'Google Sans';
             src: url('GoogleSans-Regular.eot');
             src: local('Google Sans Regular'), local('GoogleSans-Regular'),
                 url('GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
-                url('GoogleSans-Regular.woff2') format('woff2'),
-                url('GoogleSans-Regular.woff') format('woff'),
                 url('GoogleSans-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
@@ -193,46 +216,56 @@
     <div class="container">
         <header>
             <nav>
-                <img class="logo" src="assets/images/Icon_rabbit.png" alt="rabbit" width="24" height="24">
-
                 <ul>
-                    <li><span id="datify" Datify></span></li>
-                    <li><a class="menu home" href="/home.html">Home</a></li>
-                    <li><a class="menu" href="/members.html">Members</a></li>
-                    <li><a class="menu" href="/blog.html">Blog</a></li>
-                    <li><a class="menu" href="/privacy.html">Privacy</a></li>
-                    <li><a class="menu login" href="/login.html">Log in</a></li>
-                    <li><a id="button1" class="Register" href="/register.html">Register</a></li>
+                    <div id="datify"><img class="logo" src="assets/images/Icon_rabbit.png" alt="rabbit" width="24"
+                            height="24">
+                        <li class="datify">Datify</li>
+                    </div>
+                    <div class="navigation">
+                        <span>
+                            <li><a class="menu home" href="/home.html">Home</a></li>
+                        </span>
+                        <li><a class="menu" href="/members.html">Members</a></li>
+                        <li><a class="menu" href="/blog.html">Blog</a></li>
+                        <li><a class="menu" href="/privacy.html">Privacy</a></li>
+                    </div>
+                    <div class="login">
+                        <li><a class="menu" href="/login.html">Log in</a></li>
+                        <li><a id="button1" class="Register" href="/register.html">Register</a></li>
+                    </div>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <article>
-                <div class="text">Because you deserve better!</div>
-                <h1>Get noticed for who you are, not what you look like.</h1>
-                <p>You’re more than just a photo. You have stories to tell, and passions to share, and things to talk
+        <div class="main_part">
+            <main>
+                <div class="text"><span>Because you deserve better!</span></div>
+                <div class="title">Get noticed for <span>who</span> you are, <span>not what</span> you look like.</div>
+                <div class="main_text">You’re more than just a photo. You have stories to tell, and passions to share,
+                    and things to talk
                     about that are more interesting than the weather. Because you deserve what dating deserves: better.
-                </p>
-            </article>
-            <input type="text" name="email" />
-        </main>
+                    <input type="text" name="email" /> </div>
+            </main>
+        </div>
 
-        <section>
+        <div class="image"><img class="couple" src="assets/images/image1(1).png" alt="couple"> </div>
+
+        <div class="section"><section>
             <div class="statistics">
-                <span>15k+</span>
-                <p>Dates and matches made everyday</p>
+                <div class="statistics_big">15k+</div>
+                <div class="statistics_text">Dates and matches made everyday</div>
             </div>
             <div class="statistics">
-                <span>1,456</span>
-                <p>New members signup every day</p>
+                <div class="statistics_big"><span>1,456</span></div>
+                <div class="statistics_text">New members signup every day</div>
             </div>
             <div class="statistics">
-                <span>1M+</span>
-                <p>Members from around the world</p>
+                <div class="statistics_big">1M+</div>
+                <div class="statistics_text">Members from around the world</div>
             </div>
         </section>
     </div>
+</div>
 </body>
 
 </html>
