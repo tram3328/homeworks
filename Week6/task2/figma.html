@@ -13,51 +13,57 @@
             max-width: 100%;
         }
 
-        div {
-            border: 1px solid blue;
-        }
-
         .container,
         header,
         nav,
         main,
         .main_part,
-        section {
+        section,
+        #datify,
+        .statistics,
+        .main_text {
             display: grid;
-            border: 1px solid red;
+            border: 1px solid blue;
             font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            border: 1px solid red; 
         }
 
         .container {
             grid-template-rows: 1fr 4fr 2fr;
             grid-template-columns: 1fr 1.5fr;
         }
-        
+
         header {
             grid-column: 1/3;
             height: 8vh;
-            margin-bottom: 5%;
         }
 
         nav {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 2fr 1.5fr;
             padding-left: 4.3%;
         }
 
         .logo {
-            margin-right: 1vw;
+            margin-right: 2vw;
         }
 
         #datify {
-            display: grid;
-            grid-template-columns: 10% 1fr;
-            padding-top: 2vh;
+            grid-template-columns: 13% 1fr;
+            padding-top: 2%;
+            padding-bottom: 0.5%;
             align-self: start;
             color: #1A1D32;
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             line-height: 21px;
+        }
+
+        .datify {
+            padding-top: 3%;
         }
 
         .menu {
@@ -81,13 +87,8 @@
         .login {
             justify-self: end;
             padding-top: 2vh;
-        }
-
-        .main_part {
-            padding-top: 8%;
-            height: 32vw;
-            margin: 0;
-            padding-left: 8%;
+            padding-right: 8%;
+            gap: 100px;
         }
 
         main {
@@ -96,10 +97,15 @@
             padding-left: 11%;
         }
 
+        .main_part {
+            padding-top: 10%;
+            padding-left: 8%;
+        }
+
         .image {
             grid-column: 2/3;
             grid-row: 2/4;
-            height: 95vh;
+            height: 97vh;
             padding-left: 8%;
             padding-bottom: 0%;
         }
@@ -110,30 +116,27 @@
 
         section {
             grid-column: 1/2;
-            padding-left: 9%;
-            height: 15vh;
-            grid-column: 1/2;
+            grid-row: 3/4;
+            padding-left: 8%;
+            padding-top: 5%;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 5%;
-            height: 35vh;
+            gap: 7%;
+            padding-bottom: 7%;
         }
 
         .statistics {
-            display: grid;
-            grid-template-rows: 1.5fr 1fr;
+            grid-row: 1/2;
+            grid-template-rows: 1fr 1fr;
             align-self: center;
             justify-self: center;
-            width: 9vw;
-            height: 9vh;
         }
 
         .statistics_big {
-            font-size: 42px;
-            text-align: center;
+            font-size: 36px;
             font-style: normal;
             font-weight: bold;
 
-            line-height: 71px;
+            line-height: 50px;
             letter-spacing: -4px;
         }
 
@@ -154,37 +157,32 @@
             border-radius: 40px;
         }
 
-     
+
         .text {
-            height: 5vh;
-            left: 71px;
-            top: 207px;
             font-style: normal;
             font-weight: bold;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 12px;
+            line-height: 20px;
             color: #ED9B59;
+            padding-bottom: 1.5%;
         }
 
         .title {
             font-style: normal;
             font-weight: bold;
-            font-size: 43px;
+            font-size: 38px;
             letter-spacing: -0.01em;
             color: #1A1D32;
-            padding-bottom: 3%;
+            padding-bottom: 4%;
         }
 
         .main_text {
-            display: grid;
             grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
-            width: 90%;
-            height: 30vh;
-
+            height: 20vh;
             font-style: normal;
             font-weight: normal;
             font-size: 15px;
-            line-height: 30px;
+            line-height: 23px;
             color: #1A1D32;
             opacity: 0.7;
         }
@@ -211,8 +209,8 @@
         .statistics span {
             font-style: normal;
             font-weight: bold;
-            font-size: 42px;
-            line-height: 71px;
+            font-size: 36px;
+            line-height: 50px;
             letter-spacing: -4px;
             color: rgba(178, 94, 33, 1);
         }
@@ -230,7 +228,6 @@
             font-weight: normal;
             font-style: normal;
         }
-
     </style>
 </head>
 
@@ -242,7 +239,7 @@
                 <div id="datify">
                     <div><img class="logo" src="assets/images/Icon_rabbit.png" alt="rabbit" width="24" height="24">
                     </div>
-                    <div> Datify</div>
+                    <div class="datify"> Datify</div>
                 </div>
                 <div class="navigation">
                     <span>
@@ -251,6 +248,7 @@
                     <a class="menu" href="/members.html">Members</a>
                     <a class="menu" href="/blog.html">Blog</a>
                     <a class="menu" href="/privacy.html">Privacy</a>
+                    <a class="menu" href="/contact.html">Contact</a>
                 </div>
                 <div class="login">
                     <a class="menu" href="/login.html">Log in</a>
@@ -259,21 +257,17 @@
             </nav>
         </header>
 
-        
-<main>
-    <div class="main_part">
-            <div class="text"><span>Because you deserve better!</span></div>
-            <div class="title">Get noticed for <span>who</span> you are, <span>not what</span> you look like.</div>
-            <div class="main_text">You’re more than just a photo. You have stories to tell, and passions to share,
-                and things to talk
-                about that are more interesting than the weather. Because you deserve what dating deserves: better.
-               <input type="text" name="email" /> </div>
-        </div>
-    </main>
 
-        <div class="image"><img class="couple" src="assets/images/image1(1).png" alt="couple"> </div>
-
-      
+        <main>
+            <div class="main_part">
+                <div class="text"><span>Because you deserve better!</span></div>
+                <div class="title">Get noticed for <span>who</span> you are, <span>not what</span> you look like.</div>
+                <div class="main_text">You’re more than just a photo. You have stories to tell, and passions to share,
+                    and things to talk
+                    about that are more interesting than the weather. Because you deserve what dating deserves: better. </div>
+                    <div class="input">
+                        <input type="text" name="email" /> </div>
+            </div>
             <section>
                 <div class="statistics">
                     <div class="statistics_big">15k+</div>
@@ -288,7 +282,10 @@
                     <div class="statistics_text">Members from around the world</div>
                 </div>
             </section>
-  </div>
+        </main>
+
+        <div class="image"><img class="couple" src="assets/images/image1(1).png" alt="couple"> </div>
+    </div>
 </body>
 
 </html>
