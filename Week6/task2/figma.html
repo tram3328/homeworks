@@ -10,7 +10,6 @@
         body {
             background-color: #FEEFE3;
             max-height: 100%;
-            max-width: 100%;
         }
 
         .container,
@@ -21,14 +20,15 @@
         section,
         #datify,
         .statistics,
-        .main_text {
+        .main_text,
+        .image {
             display: grid;
             border: 1px solid blue;
             font-family: 'Google Sans', Arial, Helvetica, sans-serif;
         }
 
         div {
-            border: 1px solid red; 
+            border: 1px solid red;
         }
 
         .container {
@@ -98,19 +98,32 @@
         }
 
         .main_part {
-            padding-top: 10%;
+            padding-top: 9%;
             padding-left: 8%;
         }
 
         .image {
             grid-column: 2/3;
             grid-row: 2/4;
-            height: 97vh;
+            height: 93vh;
             padding-left: 8%;
             padding-bottom: 0%;
+            position: relative;
+            top: 0;
+            left: 0;
         }
 
         .couple {
+            max-height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            border: 1px red solid;
+        }
+
+        .waves {
+            position: absolute;
+            border: 1px green solid;
             max-height: 100%;
         }
 
@@ -121,7 +134,7 @@
             padding-top: 5%;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 7%;
-            padding-bottom: 7%;
+            padding-bottom: 20px;
         }
 
         .statistics {
@@ -132,11 +145,11 @@
         }
 
         .statistics_big {
-            font-size: 36px;
+            font-size: 34px;
             font-style: normal;
             font-weight: bold;
 
-            line-height: 50px;
+            line-height: 45px;
             letter-spacing: -4px;
         }
 
@@ -170,7 +183,7 @@
         .title {
             font-style: normal;
             font-weight: bold;
-            font-size: 38px;
+            font-size: 34px;
             letter-spacing: -0.01em;
             color: #1A1D32;
             padding-bottom: 4%;
@@ -209,8 +222,8 @@
         .statistics span {
             font-style: normal;
             font-weight: bold;
-            font-size: 36px;
-            line-height: 50px;
+            font-size: 34px;
+            line-height: 45px;
             letter-spacing: -4px;
             color: rgba(178, 94, 33, 1);
         }
@@ -264,9 +277,10 @@
                 <div class="title">Get noticed for <span>who</span> you are, <span>not what</span> you look like.</div>
                 <div class="main_text">You’re more than just a photo. You have stories to tell, and passions to share,
                     and things to talk
-                    about that are more interesting than the weather. Because you deserve what dating deserves: better. </div>
-                    <div class="input">
-                        <input type="text" name="email" /> </div>
+                    about that are more interesting than the weather. Because you deserve what dating deserves: better.
+                </div>
+                <div class="input">
+                    <input type="text" name="email" /> </div>
             </div>
             <section>
                 <div class="statistics">
@@ -283,9 +297,10 @@
                 </div>
             </section>
         </main>
-
-        <div class="image"><img class="couple" src="assets/images/image1(1).png" alt="couple"> </div>
+        <div class="image">
+            <img class="waves" src="assets/images/Vector.png" alt="vawes">
+            <img class="couple" src="assets/images/image1(1).png" alt="couple">
+        </div>
     </div>
 </body>
-
 </html>
