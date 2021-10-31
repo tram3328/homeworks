@@ -33,3 +33,4 @@ function division() {
  let result = +n1 / +n2;
  document.getElementById('out').innerHTML = result;
 }
+

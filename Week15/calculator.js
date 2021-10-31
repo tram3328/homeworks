@@ -1,24 +1,34 @@
 
 //изменение темы
-function changeMe (){
-  switch(document.getElementById("theme_colour")
-  .value) {
+ 
+let body = document.querySelector("body");
+function changeMe () {
+    const option = document.querySelector("option:checked");
+    const color = option.value;
+    body.style.backgroundColor = color;
+}
+
+/* let collection = document.getElementsByTagName("body");
+
+switch(changeMe()) {
+
     case "white":
-      document.getElementsByTagName("body")
-      .style.backroundColor='white';
-      style.color='black'; break;
+      
+let body = collection[0]
+body.style.backroundColor='white';
 
       case "black":
-        document.getElementsByTagName("body")
-        .style.backroundColor='black';
-        style.color='white'; break;
+       
+        let body = collection[1]
+        .style.backroundColor='black'; break;
 
   case "blue":
-    document.getElementsByTagName("body")
-    .style.backroundColor='blue';
-    style.color='white'; break;
-  }
+  let body = collection[2]
+    .style.backroundColor='blue'; break;
+  
 }
+
+*/
 
 //сложение 
 function sum() {
@@ -53,7 +63,7 @@ function division() {
  let n2 = document.getElementById('num2').value;
  let result; 
 
- if (n2 === 0) { 
+ if (n2 === '0') { 
   result = "На 0 делить нельзя!";
 } else { 
   result = +n1 / +n2;
