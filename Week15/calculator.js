@@ -8,28 +8,6 @@ function changeMe () {
     body.style.backgroundColor = color;
 }
 
-/* let collection = document.getElementsByTagName("body");
-
-switch(changeMe()) {
-
-    case "white":
-      
-let body = collection[0]
-body.style.backroundColor='white';
-
-      case "black":
-       
-        let body = collection[1]
-        .style.backroundColor='black'; break;
-
-  case "blue":
-  let body = collection[2]
-    .style.backroundColor='blue'; break;
-  
-}
-
-*/
-
 //сложение 
 function sum() {
   let n1 = document.getElementById('num1').value;
