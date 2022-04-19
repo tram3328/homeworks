@@ -1,0 +1,42 @@
+        <!DOCTYPE html>
+        <html lang="ru">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+            <title>Registration</title>
+
+            <style>
+                #errorMessageName,
+                #errorMessageSurname,
+                #errorMessageEmail,
+                #errorMessagePassword1,
+                #errorMessagePassword2 {
+                    color: red;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div clas="container">
+                <h1>Создайте аккаунт Google</h1>
+                <input type="text" placeholder="Имя" id="name">
+                <div id="errorMessageName"></div>
+                <input type="text" placeholder="Фамилия" id="surname">
+                <div id="errorMessageSurname"></div>
+                <input type="text" placeholder="Имя пользователя" @gmail.com id="email">
+                <div id="errorMessageEmail"></div>
+                <p>Можно использовать буквы латинского алфавита, цифры и точки</p>
+                <input type="password" placeholder="Пароль" id="password1">
+                <div id="errorMessagePassword1"></div>
+                <input type="password" placeholder="Подтвердить" id="password2">
+                <div id="errorMessagePassword2"></div>
+                <p>Пароль должен сдержать не менее восьми знаков, включать буквы, цифры и специальные символы</p>
+                <div id="errorMessagePassword2"></div>
+                <button onClick="check()">Далее</button>
+            </div>
+<script src="registration.js"></script>
+        </body>
+
+        </html>
