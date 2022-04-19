@@ -4,3 +4,4 @@ function changeMe () {
     const color = option.value;
     body.style.backgroundColor = color;
 }
+
