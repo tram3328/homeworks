@@ -67,10 +67,8 @@
                 </div>
 
                 <div class="engine_parameters">
-                    <form>
                         <p>Объём двигателя, см3</p> <input type="text" name="enginevolume" /><br />
                         <p>Мощность, л.с.</p> <input type="text" name="power" /><br />
-                    </form>
                 </div>
 
                 <div class="carAge">
@@ -81,9 +79,16 @@
                         <p><input type="radio" name="carAge" value="cutframe" /> Больше 7 лет</p>
                     </div>
 
-                    <button id="calculate">Рассчитать</button>
+                    <button id="calculate" onclick="onClick()">Рассчитать</button>
 
                 </div>
+
+                <script>
+                    function onClick () {
+                        const age = document.querySelector('input[name="carAge"]:checked');
+                        const service = document.querySelector('input[name="serviceType":checked');
+                    }
+                </script>
     </body>
 
     </html>
